@@ -1,0 +1,105 @@
+@font-face {
+    font-family: Gilda;
+    src: url(../assets/fonts/GildaDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: Maven;
+    src: url(../assets/fonts/MavenPro-Regular.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgb(44, 43, 43);
+    height: 100vh;
+    padding:10px;
+}
+
+.logo{
+    font-family: "Maven";
+    letter-spacing: 8px;
+    color:#cccccc;
+}
+
+.title-div{
+    background-image: linear-gradient(to bottom left,  #3dc8d5,#8507e1);
+    width: 250px;
+    height: 200px;
+    margin: 30vh auto;
+    border-radius: 5px;
+}
+
+.title-div:hover{
+    background-image:linear-gradient(to bottom left, #8507e1, #3dc8d5); 
+}
+
+
+h1{
+    font-family: "Gilda";
+    font-size: 60px;
+    margin:10px;
+    color:white;
+}
+
+.title-div p{
+    margin: 5px;
+    text-align: center;
+    color:white;
+    font-family: "Maven";
+}
+
+ul{
+    text-align: right;
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    color: #cccccc;
+    font-family: "Maven";
+}
+
+li a:hover{
+    color:white;
+}
+
+section img{
+    display: block;
+    width: 60vw;
+    border-radius: 8px;
+    margin: 0 auto;
+
+}
+
+section{
+    height:100vh;
+}
+
+section h2{
+margin-left: 20vw;
+margin-top:40px;
+font-family: "Gilda";
+font-weight: 900; /* anpassen*/
+}
+
+section p{
+    margin-left:20vw;
+    font-family: "Maven";
+}
+
+section:first-of-type{
+    background-image: url(https://assets.website-files.com/5c8834f1555981170b2fd8b1/5c898cd67456ffcba141a5ff_PROJECTS.svg);
+    background-repeat: no-repeat;
+   
+}
+
+
+section:first-of-type h2{
+    margin:100px;
+
+}

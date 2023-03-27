@@ -27,15 +27,15 @@ header{
 }
 
 .title-div{
-    background-image: linear-gradient(to bottom left,  #3dc8d5,#8507e1);
+    background-image: linear-gradient(to bottom left,  #3dc8d5,#194894,#8507e1);
     width: 250px;
     height: 200px;
-    margin: 30vh auto;
+    margin: 30vh auto 17.5vh auto;
     border-radius: 5px;
 }
 
 .title-div:hover{
-    background-image:linear-gradient(to bottom left, #8507e1, #3dc8d5); 
+    background-image:linear-gradient(to bottom left, #8507e1,#194894, #3dc8d5); 
 }
 
 
@@ -58,10 +58,16 @@ ul{
     list-style: none;
 }
 
+
+
 li a{
     text-decoration: none;
     color: #cccccc;
     font-family: "Maven";
+}
+
+li{
+    margin-bottom: 8px;
 }
 
 li a:hover{
@@ -78,12 +84,15 @@ section img{
 
 section{
     height:100vh;
+    margin-bottom:100px;
 }
 
 section h2{
 margin-left: 20vw;
 margin-top:40px;
+margin-bottom: 15px;
 font-family: "Gilda";
+font-size:60px;
 font-weight: 900; /* anpassen*/
 }
 
@@ -93,13 +102,26 @@ section p{
 }
 
 section:first-of-type{
+    height:80vh
+}
+
+.stuffwedid-div{
     background-image: url(https://assets.website-files.com/5c8834f1555981170b2fd8b1/5c898cd67456ffcba141a5ff_PROJECTS.svg);
     background-repeat: no-repeat;
-   
+    background-size: contain;
+    width:1000px;
+    margin: 20vh auto;
 }
 
 
 section:first-of-type h2{
-    margin:100px;
+    padding-top:90px;
+    text-align: left;
+    margin:0;
+    margin-bottom: 35px;
+    font-weight: 900;
+}
 
+section:first-of-type p {
+    margin: 0;
 }

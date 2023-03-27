@@ -1,0 +1,83 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+*{
+    font-family: "Poppins",Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin:0;
+    padding:0;
+}
+
+main div{
+height: 700px;
+width:500px;
+display: inline-block;
+margin:5% auto;
+border-radius: 25px;
+border:1px solid black;
+background-color: rgba(97, 163, 27, 0.593);
+
+}
+
+main div h1{
+    margin: 50px 0px;
+}
+
+main div a{
+    border-radius:20px;
+    border:1px solid black;
+    padding:10px;
+    text-decoration: none;
+    color:black;
+}
+
+
+.index-div{
+    background-image: url(https://images.unsplash.com/photo-1503435980610-a51f3ddfee50?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+}
+
+
+
+
+main div:nth-child(2){
+display: inline-block;
+margin:0 auto;
+height:300px;
+background-color: unset;
+border:unset
+}
+
+img{
+width:250px;
+box-shadow: 0 0 10px black;
+border-radius: 25px;;
+}
+
+main div:nth-child(3){
+    border:unset;
+    background-color: unset;
+    height: 0px;
+    margin:5% 0;
+    padding:0;
+}
+
+main div:nth-child(4){
+    height: 0;
+    margin:10% 0 ;
+    padding:0;
+    border:unset;
+
+}
+
+ul{
+    display: inline-block;
+    margin:0 auto;
+    width: 420px;
+    
+}
+
+li{
+    text-align: left;
+}

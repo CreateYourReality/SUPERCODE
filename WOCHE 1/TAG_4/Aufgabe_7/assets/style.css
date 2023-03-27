@@ -1,0 +1,39 @@
+@font-face {
+    font-family: Monserrat;
+    src: url(./fonts/Montserrat-Regular.ttf);
+}
+
+*{
+    font-family: "Monserrat";
+}
+
+h3::selection{
+    background-color: #a020f0 ;
+    color:#c71585;
+}
+
+
+p::first-letter{
+    color:#00ced1;
+    font-size: 30px;
+}
+
+p::first-line{
+color:#483d8b;
+
+}
+
+h1::before{
+    content: "Hi!";
+    color:#32cd32;
+}
+
+h2::after{
+    color: #00bfff;
+    content:"!";
+}
+
+h1,h2,h3{
+color: #2e8b57  ;
+font-weight: 600
+}

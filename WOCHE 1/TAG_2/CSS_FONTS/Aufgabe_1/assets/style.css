@@ -1,0 +1,29 @@
+h2{
+    background-color: black;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+}
+
+p{
+    color: #333;
+    font-size: 20px;
+
+}
+
+li{
+    color: #777;
+    font-size: 20px;
+}
+
+li:nth-child(1){
+    text-decoration: overline;
+}
+li:nth-child(2){
+    text-decoration: line-through;
+    text-align: center;
+}
+li:nth-child(3){
+    text-decoration: underline;
+    text-align: right;
+}

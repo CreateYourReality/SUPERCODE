@@ -1,0 +1,40 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../assets/fonts/Montserrat-Regular.ttf);
+}
+
+
+
+
+ul li:nth-child(3n + 3){
+    color:#311B92;
+    font-family: "Montserrat";
+}
+
+ul li:nth-child(5n + 5){
+    background-color: #FFF176;
+}
+
+ul li:nth-child(even){
+    text-decoration: underline;
+}
+
+ul li:nth-child(odd){
+    list-style-type: square;
+}
+
+ul li:nth-child(7n + 7){
+    font-size: 1.6em;
+}
+
+ul li:first-child{
+    color: #E53935;
+}
+
+ul li:nth-child(4n + 4){
+    letter-spacing: 6px;
+}
+
+ul li:nth-child(13n + 13){
+    background-color: #FF8A80;
+}

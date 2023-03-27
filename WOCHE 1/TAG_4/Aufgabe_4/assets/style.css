@@ -1,0 +1,60 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../assets/fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Railway;
+    src: url(../assets/fonts/Raleway-Regular.ttf);
+}
+
+h3:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    color:red;
+}
+
+ul li:first-child{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#4E342E;
+}
+
+
+ul li:nth-child(2){
+    color: #689F38;
+    font-family: "Montserrat";
+}
+
+ul li:last-child{
+    font-family: "Railway";
+    color: #EF5350
+}
+
+
+
+section p:first-child{
+    color:#999;
+}
+
+
+section p:not(:last-child){
+    font-size: 26px;;
+}
+
+section p:nth-child(even){
+    color:#0277bd
+}
+
+button{
+    background: linear-gradient(#e66465, #9198e5);
+}
+
+
+button:hover{
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    color:white;
+    font-size:30px;
+}
+
+button:active{
+    background: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%);
+}

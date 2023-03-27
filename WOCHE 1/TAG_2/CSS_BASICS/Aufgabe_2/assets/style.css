@@ -1,0 +1,17 @@
+div:first-of-type{
+    background-color: lightgrey;
+}
+
+div div:first-of-type{
+    background-color: darkgrey;
+    height: 100px;
+
+}
+
+div div div:nth-child(1){
+    height: auto;
+}
+
+span, a{
+    color: red;
+}

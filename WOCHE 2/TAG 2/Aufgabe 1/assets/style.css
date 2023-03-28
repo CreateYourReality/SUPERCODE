@@ -1,0 +1,39 @@
+
+html{
+    font-size: 62.5%;
+    font-size: 1.2rem;
+    margin-right: 30vw;
+}
+
+
+
+section{
+    
+    border: 3px solid black;
+}
+
+
+ul{
+    padding-inline-start: 1.2em;
+}
+
+li{
+    font-size: 0.8em;
+    line-height: 1.5em;
+}
+
+.dog > li{
+    list-style: "🐶";
+}
+
+.cat > li{
+    list-style: "🐱";
+}
+
+.snake > li{
+    list-style: "🐍";
+}
+
+.lizzard > li{
+    list-style: "🦎";
+}

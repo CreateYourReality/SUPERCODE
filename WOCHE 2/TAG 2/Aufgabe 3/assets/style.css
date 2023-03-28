@@ -1,0 +1,57 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Alkatra;
+    src: url(../assets/fonts/Alkatra-Regular.ttf);
+}
+
+html{
+    /* font-size: 62,5%; */
+}
+
+main{
+    padding: 5%;
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1679912466009-dcccde63356e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2093&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    width: 100vw;
+}
+
+h1{
+    font-size: 2rem;
+    font-family: "Alkatra",Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 1px black;
+    padding: 0 15%;
+    color: white;
+    background-color: rgba(211,211,211,0.7);
+    width: 90vw;
+    border-radius: 1rem;
+}
+
+
+
+article{
+    font-family: "Alkatra",Arial, Helvetica, sans-serif;
+    padding: 2%;
+    border-radius: 5rem;
+    background-color: rgba(211,211,211,0.3);
+    height: 75vh;
+    margin:30px 100px 0px 100px
+
+}
+
+
+h2{
+    font-size: 1.5em;
+}
+
+p{
+    font-size: 14px;
+    padding: 4vh 0;
+}

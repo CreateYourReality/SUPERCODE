@@ -1,0 +1,113 @@
+@font-face {
+    font-family: Lato;
+    src: url(../assets/fonts/Lato-Regular.ttf);
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato";
+    color:black;
+}
+
+
+h1{
+    margin: 0 4% 0 1%;
+}
+
+header img{
+    margin-left: 8%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    height: 10vh;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap:5%;
+}
+
+ul a{
+    text-decoration: none;
+}
+
+.secondlist{
+    margin: 0 10%;
+    width: 200px;
+}
+
+.secondlist li{
+    padding-left: 10%;
+}
+
+nav{
+    width: 100%;
+}
+
+
+
+
+
+main{
+    height:90vh;
+    background-color: #D9E8E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+article{
+    width: 75vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+    height:520px;
+    justify-content: center;
+}
+
+article div{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 350PX;
+    height: 250px;
+}
+
+
+article div:nth-child(1){
+    background-image: url("../assets/img/ring001.png");
+}
+
+article div:nth-child(2){
+    background-image: url("../assets/img/ring002.png");
+}
+
+article div:nth-child(3){
+    background-image: url("../assets/img/ring003.png");
+}
+
+article div:nth-child(4){
+    background-image: url("../assets/img/ring004.png");
+}
+
+article div:nth-child(5){
+    background-image: url("../assets/img/ring005.png");
+}
+
+article div:nth-child(6){
+    background-image: url("../assets/img/ring006.png");
+}
+
+article div{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+}
+
+h3{
+}

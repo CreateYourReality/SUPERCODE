@@ -1,0 +1,96 @@
+@font-face {
+    font-family: Raleway;
+    src: url(../assets/fonts/Raleway-Regular.ttf);
+}
+
+/* html{
+    font-size: 62.5%;
+} */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color:#666;
+}
+
+h1:hover{
+    color: #333;
+}
+
+ul{
+    list-style: none;
+}
+
+li a{
+    color: #333;
+    text-decoration: none;
+}
+
+li a:hover{
+    color: #337ab7;
+}
+
+header{
+    font-family: "Raleway";
+    background-image: url(https://149842022.v2.pressablecdn.com/wp-content/uploads/sites/59/2016/03/photo-1443527216320-7e744084f5a7-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;;
+}
+
+nav{
+height: 76px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    width:700px;
+}
+
+
+article{
+    padding-top: 5%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:3%;
+    color: white;
+
+}
+
+article h2{
+    font-size: 60px;
+}
+
+.read-more-button{
+    background-color: #745cf9;
+    text-decoration: none;
+    color: white;
+    padding: 17px 42px;
+}
+
+.read-more-button:hover{
+    background-color: #5234f9;
+}
+
+.download-button{
+    text-decoration: none;
+    color: white;
+    padding: 15px 35px;
+    border: 2px solid white;
+}
+.download-button:hover{
+    background-color: white;
+    color:black;
+
+}

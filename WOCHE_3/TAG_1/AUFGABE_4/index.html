@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>FORMULARE - AUFGABE 4</title>
+</head>
+<body>
+    <main>
+        <section>
+            <form action="">
+                <fieldset>
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" value="Name">
+                    </div>
+                    <div>
+                        <label for="surname">Surname</label>
+                    <input type="text" id="surname" value="Surname">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" value="Email">
+                    </div>
+                    <div id="gender">
+                        <label for="gender">Gender</label>
+                        <input type="radio" name="gender">Male</option>
+                        <input type="radio" name="gender">Female</option>
+                    </div>
+                    <div>
+                        <label for="upload">Picture</label>
+                        <input type="file" id="upload" name="upload" accept="image/png, image/jpeg">
+                    </div>
+                    <div>
+                        <label for="country">Country</label>
+                        <select name="country" id="country">
+                            <option value="">Germany</option>
+                            <option value="">France</option>
+                            <option value="">USA</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="fl">Preferred languages</label>
+                       <select name="fl" id="fl" multiple="multiple">
+                            <option value="HTML">HTML</option>
+                            <option value="CSS">CSS</option>
+                            <option value="JS">JS</option>
+                            <option value="REACt">REACT</option>
+                       </select>
+                       <label id="more-width" for="fl">(To choose more than one hold cmd key)</label>
+                    </div>
+
+                    <div>
+                        <label for="foa">Field of activity</label>
+                        <input type="checkbox" name="foa" id="IT-cb">
+                        <label class="no-width" for="IT-cb">IT</label>
+                        <input type="checkbox" name="foa" id="Design-cb">
+                        <label class="no-width" for="Design-cb">Design</label>
+                        <input type="checkbox" name="foa" id="Other-cb">
+                        <label class="no-width" for="Other-cb">Other</label>
+                    </div>
+                   
+                    <legend>
+                        <label class="no-width" for="fieldset-title">Register Form</label>
+                    </legend>
+                    <input type="submit" name="submit" value="send">
+                    <input type="reset" name="reset" value="cancel">
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+    
+</body>
+</html>

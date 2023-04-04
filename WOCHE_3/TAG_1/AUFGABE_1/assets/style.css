@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+label{
+    display: block;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+textarea{
+   min-width: 300px;
+   max-width: 300px;
+   width: 300px;
+   display: block;
+}
+
+input[type="submit"]{
+    background-color: aqua;
+    width:300px;
+    margin-top: 15px;
+}
+
+.more-width{
+    width:300px;
+}
+
+span{
+    color:red;
+}
+
+input[type="text"]{
+    color:lightgray;
+}

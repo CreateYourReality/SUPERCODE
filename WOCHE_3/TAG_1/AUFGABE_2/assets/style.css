@@ -1,0 +1,62 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+input{
+    display: block;
+}
+input{
+    margin: 15px 0;
+    width: 220px;
+}
+
+textarea{
+    width: 220px;
+    min-width: 220px;
+    max-width: 220px;
+    min-height: 70px;
+    max-height: 70px;
+    height:70px;
+}
+
+h1{
+    text-align: center;
+    background-color: lightgreen ;
+    padding:10px;
+    font-size: 18px;
+    color:white;
+    width: 250px;
+}
+
+form{
+    background-color: lightgrey;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="submit"]{
+    background-color:lightgreen;
+    border:none;
+    height:30px;
+    color:white;
+}
+
+input, select, textarea{
+    color: grey;
+}
+
+textarea:focus, input:focus {
+    color: black;
+}

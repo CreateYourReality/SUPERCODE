@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+section{
+    height: 100vh;
+    display:flex
+}
+
+h2{
+
+}
+
+div{
+    width: 20%;
+    height: 100%;
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+div:nth-of-type(1){
+    animation: strobo 2s alternate infinite;
+}
+div:nth-of-type(2){
+    animation: strobo 1s alternate infinite;
+}
+div:nth-of-type(3){
+    animation: strobo .5s alternate infinite;
+}
+div:nth-of-type(4){
+    animation: strobo .2s alternate infinite;
+}
+div:nth-of-type(5){
+    animation: strobo .1s alternate infinite;
+}
+
+
+
+div::nth-of-type(1) h2{
+    animation: strobo-text 2s alternate infinite;
+}
+div:nth-of-type(2) h2{
+    animation: strobo-text 1s alternate infinite;
+}
+div:nth-of-type(3) h2{
+    animation: strobo-text .5s alternate infinite;
+}
+div:nth-of-type(4) h2{
+    animation: strobo-text .2s alternate infinite;
+}
+div:nth-of-type(5) h2{
+    animation: strobo-text .1s alternate infinite;
+} 
+
+@keyframes strobo {
+    0%{
+        background-color: white;
+        color:black;
+    }
+
+   100%{
+        background-color: black;
+        color:white;
+   }
+    
+}
+   @keyframes strobo-text {
+    0%{
+        color:black;
+    }
+
+   100%{
+        color:white;
+   }
+    
+}

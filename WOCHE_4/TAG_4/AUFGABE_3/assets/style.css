@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+article{
+    height: 300px;;
+    width: 300px;
+    background-color: green;
+    overflow:hidden;
+}
+
+
+div{
+
+    height: 300px;
+    width: 300px;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
+    transform:translateY(300px)
+
+    }
+
+
+article:hover div{
+    transform:translateY(0px);
+
+}

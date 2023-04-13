@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,footer,main,aside{
+    min-height: 10px;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(10,1fr);
+}
+
+header{
+    background-color: blue;
+    grid-column: 1 / 5;
+}
+
+aside{
+    background-color: green;
+    grid-row: 2 / 10;
+}
+
+main{
+    background-color: red;
+    grid-row:2/10;
+    grid-column: 2/5;
+}
+
+footer{
+    background-color: purple;
+    grid-row:10 / 11;
+    grid-column: 1 / 5;
+}

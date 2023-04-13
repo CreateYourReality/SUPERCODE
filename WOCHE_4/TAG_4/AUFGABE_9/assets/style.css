@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+section{
+
+    height: 100vh;
+    width: 100vw;
+}
+
+
+div{
+    border-radius: 50%;
+    height:100px;
+    width: 100px;
+    background-color: blue;
+    position: absolute;
+    animation: bounce 5s infinite reverse ;
+}
+
+@keyframes bounce {
+  0%,100% {
+     top: 0; left: 0; 
+    background-color: red;
+  }
+  25% { 
+    top: calc(100vh - 100px); left: 0px; 
+    background-color: yellow;
+
+  }
+  50% { 
+    top: calc(100vh - 100px); 
+    left: calc(100% - 100px);
+    background-color: green;
+  }
+  75% { 
+    top: 0px;
+    left: calc(100% - 100px);
+    background-color: purple;
+
+  }
+
+}
+
+
+div:hover{
+animation-play-state: paused;}

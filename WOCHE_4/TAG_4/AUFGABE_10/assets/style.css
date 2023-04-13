@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+section{
+    background-color: darkgrey;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div{
+    height:200px;
+    width: 200px;
+    background-color: white;
+}
+
+div:hover{
+    animation:shadow 2s infinite ease-in-out;
+}
+
+
+@keyframes shadow {
+    0%,100%{
+        box-shadow: 1px 1px 50px black;
+    }
+    25%{
+        box-shadow: 1px 1px 25px blue;
+
+    }
+
+    50%{
+        box-shadow: 1px 1px 50px purple;
+
+    }
+
+    75%{
+        box-shadow: 1px 1px 25px white;
+
+    }
+    
+}

@@ -1,0 +1,27 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+
+div{
+    background-color: red;
+    height: 150px;
+    width: 150px;
+    transition: all 1s ;
+    transform-origin: bottom left;
+}
+
+
+div:hover{
+    scale:1.5;
+    transform: rotate(90deg);
+}

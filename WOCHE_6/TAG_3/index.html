@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>TAG 3 JAVASCRIPT EINFÜHRUNG</title>
+</head>
+<body>
+
+    <main>
+            <form onsubmit="doubleME(); return false">
+                <label for="number">Number</label>
+                <input type="number" class="num">
+                <input type="submit">
+
+            </form>
+
+            <form onsubmit="giveYear(); return false">
+                <label for="year">Geburtsjahr</label>
+                <input type="year" class="year">
+                <input type="submit">
+
+            </form>
+
+            <form onsubmit="getDiff(); return false">
+                <label for="year1">Geburtsjahr 1</label>
+                <input type="year1" class="year1">
+                <label for="year2">Geburtsjahr 2</label>
+                <input type="year2" class="year2">
+                <input type="submit" value="Berechne">
+            </form>
+
+            <p class="output"></p>
+
+
+            <article>
+
+                <h1>COUNTER</h1>
+                <p class="counterOutput">1</p>
+                <div>
+                    <button onclick="add1()" class="add1">+1</button>
+                    <button onclick="sub1()"class="sub1">-1</button>
+                    <button onclick="add10()"class="add10">+10</button>
+                    <button onclick="sub10()"class="sub10">-10</button>
+                    <button onclick="add100()"class="add100">+100</button>
+                    <button onclick="sub100()"class="sub100">-100</button>
+                    <button onclick="reset()"class="reset">RESET</button>
+                    <button onclick="mult2()"class="mult2">*2</button>
+                </div>
+
+
+            </article>
+
+
+            <section>
+                <h2>Hier ist Headline</h2>
+            <button onclick="changeHeadline()" class="headlineBtn">HEADLINE STYLEN</button>
+            <button onclick="resetHeadline()" class="headlineBtn">HEADLINE RESET</button>
+
+            </section>
+
+    </main>
+
+
+
+    <script src="./assets/main.js" type="text/javascript"></script>
+    
+</body>
+</html>

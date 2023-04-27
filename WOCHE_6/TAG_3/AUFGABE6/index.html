@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>JAVASCRIPT EINFÜHRUNG TAG3 AUFGABE 6</title>
+</head>
+<body>
+
+    <main>
+        <form onsubmit="return false;">
+            <label for="red">RED</label>
+            <input onchange="changeBackground()" id="red" name="red" type="range" min="0" max="255" step="1" value="0">
+            <label for="green">GREEN</label>
+            <input onchange="changeBackground()" id="green" name="green" type="range" min="0" max="255" step="1" value="0">
+            <label for="blue">BLUE</label>
+            <input onchange="changeBackground()" id="blue" name="blue" type="range" min="0" max="255" step="1" value ="0">
+        </form>
+
+
+    </main>
+    
+
+    <script type="text/javascript" src="./assets/main.js"></script>
+</body>
+</html>

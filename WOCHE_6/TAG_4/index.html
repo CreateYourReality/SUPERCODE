@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>JAVASCRIPT EINFÜHRUNG TAG 4</title>
+</head>
+<body>
+
+
+    <main>
+
+        <section id="AUFGABE1">
+            <form onsubmit="adult();return false;">
+                <label for="age">AGE</label>
+                <input class="age" type="number" value="0">
+                <input type="submit">
+                <p class="output"></p>
+            </form>
+        </section>
+
+
+        <section id="AUFGABE2">
+            <form onsubmit="weather();return false;">
+                <label for="quali">WETTER QUALITÄT</label>
+                <input class="quali" type="number" value="0">
+                <input type="submit">
+                <p class="output2"></p>
+            </form>
+        </section>
+
+
+        <section id="AUFGABE3">
+            <h1 style="color: rgb(0, 119, 255)">JavaScript : if else statement</h1>
+            <h3>
+                Hier prüfen wir, ob das Alter größer als 18 ist
+                oder nicht. Shisha rauchen darf man nur, wenn man volljährig ist.
+            </h3>
+            <hr />
+            <form name="form1" action="#">
+                Geben Sie Ihr Alter ein<input type="text" name="text1" id="input" />
+                <input type="button" value="Alter" onclick="greaterThan()" />
+                <p class="output3"></p>
+            </form>
+        </section>
+
+
+        <section id="AUFGABE4">
+            <form onchange="checkAirQuality(); return false;">
+            <label class="aqi-label" for="aqi">AQI: 0</label>
+            <input class="aqi" name="aqi" value="0" type="range" min="0" max="150">
+            <p class="aqi-concern"></p>
+            <p class="aqi-effect"></p>
+            </form>
+        </section>
+
+
+        <section id="AUFGABE5">
+            <form onsubmit="mathME();return false;">
+                <label for="tolleZahl">Zufallszahl: </label>
+                <input type="number" value="0" class="tolleZahl">
+                <input type="submit" value="rechnen">
+            </form>
+
+
+
+        </section>
+
+
+
+
+    </main>
+
+
+    <script src="./assets/main.js" type="text/javascript"></script>
+    
+</body>
+</html>

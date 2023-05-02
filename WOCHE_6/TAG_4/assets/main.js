@@ -38,6 +38,7 @@ function greaterThan(){
     const age = Number(document.getElementById("input").value);
     const output3 = document.querySelector(".output3");
 
+    console.log("test");
     if(age >= 18){
         output3.innerHTML = "Ja, Du kannst Shisha rauchen";
     } else{

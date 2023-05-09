@@ -219,7 +219,7 @@ let album = [
 
 
 const removeME = (a) => {
-   return (a.includes(".") ? a = a.slice(0,a.length-4) : a = "invalid").toLowerCase();
+   return (a.includes(".") ? a.slice(0,a.length-4) : "invalid").toLowerCase();
 }
 
 let newAlbum = album.map(removeME);

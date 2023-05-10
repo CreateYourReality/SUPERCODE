@@ -37,10 +37,9 @@ console.log("%c ###### AUFGABE 4 ###### ", "color:red;background-color:yellow");
 
 const imageArray = () => {
     let returnArray = [];
+    let addZero = "0";
 
     for(let i = 1; i <= 100; i++){
-        let addZero = "0";
-
         if(i < 10){
             returnArray.push("image_"+addZero+addZero+i);
         } else if (i < 100){

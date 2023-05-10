@@ -220,7 +220,7 @@ let album = [
 
 const removeME = (a) => {
    return (a.includes(".") ? a.slice(0,a.length-4) : "invalid").toLowerCase();
-}
+}                             //mit lastIndexOf() besser.
 
 let newAlbum = album.map(removeME);
 console.log(newAlbum);

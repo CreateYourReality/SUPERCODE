@@ -32,7 +32,7 @@ const colorSelect = document.getElementById("aufgabe3");
 const removeColorBtn = document.getElementById("removeColor");
 
 removeColorBtn.addEventListener("click", () => {
-
+    event.preventDefault();
     colorSelect[colorSelect.selectedIndex].remove();
 })
 
@@ -44,8 +44,14 @@ const colorChangeBtn = document.getElementById("button");
 const body = document.querySelector("body");
 
 colorChangeBtn.addEventListener("click", () => {
+    event.preventDefault();
     let removeSpace = chooseColor.value.replace(/\s/g, '');
-    console.log(removeSpace);
+    let changeOptionColor = document.getElementById(chooseColor.selectedIndex+1);
+
+    for(let i = 1; i <= 10; i++ ){
+        document.getElementById(i).style.backgroundColor = "";
+    } 
 
     body.style.backgroundColor = removeSpace;
+    changeOptionColor.style.backgroundColor = removeSpace;
 })

@@ -115,3 +115,4 @@ const calcLOOP = () => {
 
     outputField.innerHTML = "L"+outLoops+"p";
 }
+

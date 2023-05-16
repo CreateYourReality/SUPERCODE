@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>JS EINFÜHRUNG DOM PART 1</title>
+</head>
+<body>
+
+  <div class="style">
+      <div class="example">
+        Ein div mit class="example".
+      </div>
+  
+      <div class="example">
+        Ein weiteres div mit class="example".
+      </div>
+  
+      <p class="example">Dies ist ein p-Element mit class="example"</p>
+  
+      <p>Dies ist ein <span class="example">span</span> Element mit class="example" in einem anderen p-Element.</p>
+  
+      <p>Klicken Sie auf die Button, um die Hintergrundfarbe aller Elemente mit class="example" zu ändern.</p>
+  
+      <button class="example" onclick="myFunction()">Versuchen Sie es</button>
+    </div>
+
+
+    <ul id="myList">
+        <li>Super Mario World</li>
+        <li>The Legend of Zelda</li>
+        <li>Portal 2</li>
+        <li>Tetris</li>
+        <li>Half-Life 2</li>
+        <li>Red Dead Redemption</li>
+        <li>Grand Theft Auto V</li>
+      </ul>
+      <div class="unten">
+        <button># firstElementChild</button><br>
+        <button># lastElementChild</button><br>
+        <button># firstElementChild nextElementSibling</button><br>
+        <button># lastElementChild previousElementSibling</button>
+      </div>
+    
+      <h1>Output</h1>
+      <output></output>
+    
+   
+   
+
+ <ul>
+     <div class="listContainer">
+         <li><a class="nav" id="navHome" href="#home">Home</a></li>
+         <li><a class="nav" id="navNews" href="#news">News</a></li>
+         <li><a class="nav" id="navContact" href="#contact">Contact</a></li>
+     </div>
+     <li class="nav"><a class="active" id="navChange">Change me</a></li>
+     <li class="nav"><a class="active" id="navChange2">Change me</a></li>
+ </ul>
+
+
+ <button id="createBtn">Click</button>
+ <div class='umwickeln'></div>
+
+
+ <div>
+	<h1>Einkaufsliste - Rewe</h1>
+	<input id="userinput" type="text" placeholder="Hier Artikel eingeben">
+	<input id="enter" type="submit" value="Speichern"></input>
+	<p>Liste:</p>
+	<ul id="einkaufsliste">
+  	<li>McCain Pommes Frites 1.2.3 Golden Longs 600g</li>
+  	<li>Iglo Fischstäbchen 450g, 15 Stück</li>
+  	<li>Waldiben Fass-Salzgurken eingelegt 450g</li>
+  	<li>Gustavo Gusto Pizza Margherita 410g</li>
+  	<li>Followfish Bio-Lachs-Filets 200g</li>
+	</ul>
+  </div>
+
+
+  <h1>Meine dynamische Webseite</h1>
+  <p id="demo">Wähle eine Farbe:</p>
+  <p>
+	<button onclick="changeBackground('pink')">Rosa</button>
+	<button onclick="changeBackground('purple')">Lila</button>
+	<button onclick="changeBackground('orange')">Orange</button>
+  </p>
+  <p>
+	<input type="range" id="rot" value="255" min="0" max="255" onchange="changeHandle()" style="background:red">
+	Rot<br>
+	<input type="range" id="grun" value="255" min="0" max="255" onchange="changeHandle()"
+  	style="background:green">
+	Grün<br>
+	<input type="range" id="blau" value="255" min="0" max="255" onchange="changeHandle()"
+  	style="background:blue">
+	Blau
+  </p>
+
+
+
+
+
+
+    <script type="text/javascript" src="./assets/main.js"></script>
+</body>
+</html>

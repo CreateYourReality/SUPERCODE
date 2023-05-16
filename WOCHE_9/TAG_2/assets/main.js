@@ -78,21 +78,30 @@ console.log("%c ########## AUFGABE 4 ###########", "background-color:yellow; col
 
 const createBtn = document.getElementById("createBtn");
 let counter = 0;
+const umwickelt = document.querySelector(".umwickeln");
 
 createBtn.addEventListener("click", () => {
 
         let newElement = document.createElement("div");
         newElement.textContent = counter;
-        newElement.style.display = "inline-block";
-        newElement.style.marginLeft = "8.3%";
-        newElement.style.marginTop = "1%";
-        if(counter % 10 == 0){
+     //  newElement.style.flex = "inline-block";
+        // newElement.style.marginLeft = "5%";
+        // newElement.style.marginTop = "1%";
+        if(counter % 10 == 0 || counter == 0){
             newElement.classList.add("weiss");
+            document.querySelector("body").appendChild(document.createElement("br"));
+            newElement.style.paddingTop = "10px";
+            newElement.style.paddingLeft = "10px";
+            newElement.style.paddingRight = "10px";
+            newElement.style.paddingBottom = "10px";
+
         }else {
-            newElement.classList.add("umwickelt");
+            newElement.classList.add("rechteck");
+            
+
         }
 
-        document.querySelector("body").appendChild(newElement);
+        umwickelt.appendChild(newElement);
         counter++;
     })
 

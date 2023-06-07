@@ -1,13 +1,24 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom"
 
-const Detail = () => {
+const Detail = (probs) => {
     const idParams = useParams();
     const APIKEY = "b49d67a78fb04e0b927c43baa1801e78";
     const [superData, setData] = useState("");
 
+    console.log(idParams);
+
+    const country = useParams().country;
+    const keyword = useParams().keyword
+
+    console.log("keyword",keyword);
+
     useEffect(() => {
-        fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${APIKEY}`)
+        if(keyword != undefined)
+            fetch(`https://newsapi.org/v2/top-headlines?q=${keyword}&country=${country}&apiKey=${APIKEY}`)
+        else
+            fetch(`https://newsapi.org/v2/top-headlines?country=${country}&apiKey=${APIKEY}`)
+
           .then((response) => response.json())
           .then((superData) => {
             setData(superData);
@@ -17,14 +28,13 @@ const Detail = () => {
           });
     
         console.log(
-          "Pizzacouter wurde gändert darum wird useEffect nochmal ausgeführt"
+          "fetch,  darum wird useEffect (nochmal) ausgeführt"
         );
         // Wenn die [] leer sind, wird das nur 1x beim laden der seite asugeführt
       }, []);
 
 
       const currentNewsID = Number(idParams.newsID);
-      console.log(superData);
 
     return (  
         <article>

@@ -1,0 +1,35 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+img{
+  max-width: 100%;
+}
+
+.news-item img{
+ width: 200px;
+}
+
+section{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.news-item{
+  border:1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+article{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+}

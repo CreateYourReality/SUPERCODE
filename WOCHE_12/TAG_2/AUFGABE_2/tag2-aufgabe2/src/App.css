@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  height: 50vh;
+  background-color: yellowgreen;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+
+}
+
+a{
+  margin-left: 10px;
+  text-decoration: none;
+}

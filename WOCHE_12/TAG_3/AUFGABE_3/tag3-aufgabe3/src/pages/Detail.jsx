@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom"
 
-const Detail = (probs) => {
+const Detail = () => {
     const idParams = useParams();
     const APIKEY = "b49d67a78fb04e0b927c43baa1801e78";
     const [superData, setData] = useState("");
@@ -14,11 +14,23 @@ const Detail = (probs) => {
     console.log("keyword",keyword);
 
     useEffect(() => {
-        if(keyword != undefined)
+        console.log(keyword);
+        if(keyword != undefined){
             fetch(`https://newsapi.org/v2/top-headlines?q=${keyword}&country=${country}&apiKey=${APIKEY}`)
-        else
+            .then((response) => response.json())
+            .then((superData) => {
+              setData(superData);
+            })
+            .catch((error) => {
+              console.log("Fehler beim laden", error);
+            });
+      
+          console.log(
+            "fetch,  darum wird useEffect (nochmal) ausgeführt"
+          )
+        }else
             fetch(`https://newsapi.org/v2/top-headlines?country=${country}&apiKey=${APIKEY}`)
-
+        
           .then((response) => response.json())
           .then((superData) => {
             setData(superData);
